@@ -1,7 +1,6 @@
 const cardList = document.querySelector('.process-item-one');
 const cardHeroSection = document.querySelector('.hero-section-one');
 const titleContent = document.querySelector('.title-content');
-// const cardTitle = document.querySelector('.process-title-one');
 const cardBtn = document.querySelector('.action-button');
 const divider = document.querySelector('.divider');
 const textContainer = document.querySelector('.process-text-container');
