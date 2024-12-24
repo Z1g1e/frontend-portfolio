@@ -186,7 +186,15 @@ a {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.title-one, .title-four, .title-six {
+.process-title-one {
+  width: max-content;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  border-radius: 14px;
+}
+
+.title-four, .title-six {
   width: max-content;
   font-size: 40px;
   margin-bottom: 0px;
@@ -403,6 +411,13 @@ a {
   background-color: #b9ff66;
   border-radius: 46px;
   border: 1px solid #000;
+  transition: all 0.5s ease;
+}
+
+.process-item-one.active {
+  background-color: #f3f3f3; /* Змінюємо колір */
+  transform: translateY(20px); /* Додаємо зміщення */
+  height: 160px; /* Змінюємо висоту */
 }
 
 .hero-section-one {
@@ -413,7 +428,7 @@ a {
   align-items: start; 
 }
 
-.hero-section-one > .title-one {
+.process-title-one {
   font-size: 56px;
   font-weight: 600;
   display: flex;
@@ -474,4 +489,8 @@ a {
   border: none; 
   border-top: 2px solid black; 
   margin-left: 3vw;
+}
+
+.process-item-two {
+  margin-top: 100px;
 }
