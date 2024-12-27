@@ -186,7 +186,7 @@ a {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.process-title-one {
+.title-one {
   width: max-content;
   font-size: 40px;
   margin-bottom: 0px;
@@ -194,7 +194,7 @@ a {
   border-radius: 14px;
 }
 
-.title-four, .title-six {
+.title-one, .title-four, .title-six {
   width: max-content;
   font-size: 40px;
   margin-bottom: 0px;
@@ -414,8 +414,27 @@ a {
   transition: all 0.5s ease;
 }
 
+.process-item-two {
+  margin-left: 6.4vw;
+  height: 160px;
+  width: 84.4%;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 46px;
+  border: 1px solid #000;
+  transition: all 0.5s ease;
+  margin-top: 4vh;
+}
+
 .process-item-one.active {
   background-color: #f3f3f3; /* Змінюємо колір */
+  transform: translateY(20px); /* Додаємо зміщення */
+  height: 160px; /* Змінюємо висоту */
+}
+
+.process-item-two.active {
+  background-color: #b9ff66; /* Змінюємо колір */
   transform: translateY(20px); /* Додаємо зміщення */
   height: 160px; /* Змінюємо висоту */
 }
@@ -428,11 +447,27 @@ a {
   align-items: start; 
 }
 
+.hero-section-two {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  margin-top: 4vh;
+}
+
 .process-title-one {
   font-size: 56px;
   font-weight: 600;
   display: flex;
-  padding-left: 25px;
+  padding-left: 3vw;
+  margin-top: 10px;
+}
+
+.process-title-two {
+  font-size: 56px;
+  font-weight: 600;
+  display: flex;
+  padding-left: 3vw;
   margin-top: 10px;
 }
 
@@ -444,6 +479,17 @@ a {
   display: flex;
   align-items: center;
   margin-top: 4px;
+}
+
+.title-content-two {
+  width: 85vw;
+  font-size: 32px;
+  font-weight: 500;
+  height: 37%;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+  margin-top: 2.2vh;
 }
 
 .process-button-container {
@@ -469,12 +515,28 @@ a {
   margin-top: 14px;
 }
 
+.action-button-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
 .list-one {
   font-size: 44px;
   font-weight: 600;
 }
 
-.process-text-content {
+/* Неймовірний колхоз однозначно на доопрацювання */
+
+.process-text-content-one {
   margin-left: -79.7vw;
   margin-top: 16vh;
   font-size: 23px;
@@ -482,7 +544,54 @@ a {
   padding: 30px 30px;
 }
 
-.divider {
+.process-text-content-two {
+  margin-left: -79.7vw;
+  margin-top: 16vh;
+  font-size: 23px;
+  font-weight: 450;
+  padding: 30px 30px;
+  display: none;
+}
+
+.process-text-content-three {
+  margin-left: -79.7vw;
+  margin-top: 16vh;
+  font-size: 23px;
+  font-weight: 450;
+  padding: 30px 30px;
+  display: none;
+}
+
+.process-text-content-four {
+  margin-left: -79.7vw;
+  margin-top: 16vh;
+  font-size: 23px;
+  font-weight: 450;
+  padding: 30px 30px;
+  display: none;
+}
+
+.process-text-content-five {
+  margin-left: -79.7vw;
+  margin-top: 16vh;
+  font-size: 23px;
+  font-weight: 450;
+  padding: 30px 30px;
+  display: none;
+}
+
+.process-text-content-six {
+  margin-left: -79.7vw;
+  margin-top: 16vh;
+  font-size: 23px;
+  font-weight: 450;
+  padding: 30px 30px;
+  display: none;
+}
+
+/* Неймовірний колхоз однозначно на доопрацювання x2*/
+
+.divider-one {
   position: absolute;
   width: 75.8%;
   height: 1px;
@@ -490,6 +599,58 @@ a {
   border-top: 2px solid black; 
   margin-left: 3vw;
 }
+
+.divider-two {
+  position: absolute;
+  width: 75.8%;
+  height: 1px;
+  border: none; 
+  border-top: 2px solid black; 
+  margin-left: 3vw;
+  display: none;
+}
+
+.divider-three {
+  position: absolute;
+  width: 75.8%;
+  height: 1px;
+  border: none; 
+  border-top: 2px solid black; 
+  margin-left: 3vw;
+  display: none;
+}
+
+.divider-four {
+  position: absolute;
+  width: 75.8%;
+  height: 1px;
+  border: none; 
+  border-top: 2px solid black; 
+  margin-left: 3vw;
+  display: none;
+}
+
+.divider-five {
+  position: absolute;
+  width: 75.8%;
+  height: 1px;
+  border: none; 
+  border-top: 2px solid black; 
+  margin-left: 3vw;
+  display: none;
+}
+
+.divider-six {
+  position: absolute;
+  width: 75.8%;
+  height: 1px;
+  border: none; 
+  border-top: 2px solid black; 
+  margin-left: 3vw;
+  display: none;
+}
+
+/*  */
 
 .process-item-two {
   margin-top: 100px;
