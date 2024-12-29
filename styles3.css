@@ -469,9 +469,10 @@ a {
   display: flex;
   padding-left: 3vw;
   margin-top: 10px;
+  height: 31%;
 }
 
-.title-content {
+.card-title-content {
   font-size: 32px;
   font-weight: 500;
   height: 37%;
@@ -482,14 +483,12 @@ a {
 }
 
 .title-content-two {
-  width: 85vw;
   font-size: 32px;
   font-weight: 500;
   height: 37%;
+  width: 150%;
   margin-left: 1vw;
-  display: flex;
-  align-items: center;
-  margin-top: 2.2vh;
+  margin-bottom: 0px;
 }
 
 .process-button-container {
@@ -534,8 +533,6 @@ a {
   font-weight: 600;
 }
 
-/* Неймовірний колхоз однозначно на доопрацювання */
-
 .process-text-content-one {
   margin-left: -79.7vw;
   margin-top: 16vh;
@@ -553,44 +550,6 @@ a {
   display: none;
 }
 
-.process-text-content-three {
-  margin-left: -79.7vw;
-  margin-top: 16vh;
-  font-size: 23px;
-  font-weight: 450;
-  padding: 30px 30px;
-  display: none;
-}
-
-.process-text-content-four {
-  margin-left: -79.7vw;
-  margin-top: 16vh;
-  font-size: 23px;
-  font-weight: 450;
-  padding: 30px 30px;
-  display: none;
-}
-
-.process-text-content-five {
-  margin-left: -79.7vw;
-  margin-top: 16vh;
-  font-size: 23px;
-  font-weight: 450;
-  padding: 30px 30px;
-  display: none;
-}
-
-.process-text-content-six {
-  margin-left: -79.7vw;
-  margin-top: 16vh;
-  font-size: 23px;
-  font-weight: 450;
-  padding: 30px 30px;
-  display: none;
-}
-
-/* Неймовірний колхоз однозначно на доопрацювання x2*/
-
 .divider-one {
   position: absolute;
   width: 75.8%;
@@ -602,55 +561,13 @@ a {
 
 .divider-two {
   position: absolute;
-  width: 75.8%;
+  width: 92.7%;
   height: 1px;
   border: none; 
   border-top: 2px solid black; 
   margin-left: 3vw;
   display: none;
 }
-
-.divider-three {
-  position: absolute;
-  width: 75.8%;
-  height: 1px;
-  border: none; 
-  border-top: 2px solid black; 
-  margin-left: 3vw;
-  display: none;
-}
-
-.divider-four {
-  position: absolute;
-  width: 75.8%;
-  height: 1px;
-  border: none; 
-  border-top: 2px solid black; 
-  margin-left: 3vw;
-  display: none;
-}
-
-.divider-five {
-  position: absolute;
-  width: 75.8%;
-  height: 1px;
-  border: none; 
-  border-top: 2px solid black; 
-  margin-left: 3vw;
-  display: none;
-}
-
-.divider-six {
-  position: absolute;
-  width: 75.8%;
-  height: 1px;
-  border: none; 
-  border-top: 2px solid black; 
-  margin-left: 3vw;
-  display: none;
-}
-
-/*  */
 
 .process-item-two {
   margin-top: 100px;
