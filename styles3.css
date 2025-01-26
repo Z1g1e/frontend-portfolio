@@ -1086,28 +1086,66 @@ a {
 .contact-us-image {
   display: flex;
   position: relative;
-  left: 1186px;
-  bottom: 410px;
+  left: 62vw;
+  bottom: 720px;
 }
 
-.hello-button {
+.contact-button-section {
+  display: flex;
+  gap: 30px; /* Відстань між кнопками */
+  align-items: center;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
+  gap: 10px; /* Відстань між кнопкою і текстом */
 }
 
-.hello-title {
-  margin-right: 10px;
+.radio input {
+  display: none; /* Приховуємо стандартну радіо-кнопку */
+}
+
+.custom-circle {
+  width: 40px;
+  height: 40px;
+  border: 1.6px solid #000; /* Чорна рамка */
+  border-radius: 50%;
+  position: relative; /* Для позиціонування псевдоелемента */
+  background-color: #ffffff;
+}
+
+.hi-button {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .quote-button {
-  cursor: pointer;
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.custom-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  background-color: #b9ff66; /* Основний колір */
+  border-radius: 50%;
+  opacity: 0; /* За замовчуванням приховано */
+  transition: opacity 0.25s, background-color 0.25s;
+}
+
+.radio input:checked + .custom-circle::before {
+  opacity: 1; /* Показуємо активний колір */
+}
+
+.radio:nth-child(2) .custom-circle::before {
+  background-color: #b9ff66; /* Інший колір для другої кнопки */
 }
 
 .messenge-container {
@@ -1119,3 +1157,115 @@ a {
   margin-top: 60px;
   margin-left: 100px;
 }
+
+.messenge-container {
+  margin-top: 0px;
+  width: 500px;
+  height: 650px;
+}
+
+.name-title, .email-title, .message-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.name-input, .email-input {
+  width: 500px;
+  height: 55px;
+  border-radius: 16px;
+  border: 1.4px solid #000;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+.message-input {
+  align-items: start;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  border: 1.4px solid #000;
+  padding: 20px 20px;
+  font-size: 18px;
+}
+
+.send-message-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 0px;
+  width: 543px;
+  height: 70px;
+  background-color: #191a23;
+  border-radius: 16px;
+}
+
+/* Footer section */
+
+.footer {
+  margin-top: 150px;
+  margin-left: 164px;
+  background-color: #191a23;
+  width: 82.6%;
+  height: 550px;
+  border-radius: 46px;
+}
+
+.footer-navigation {
+  color: #ffffff;
+  box-sizing: border-box;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-left: 100px;
+}
+
+.footer-logo-name {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.footer-nav-container {
+  width: 1080px;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.footer-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-top: 6px;
+}
+
+.footer-nav-list a {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.footer-nav-images {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: -1px;
+  margin-right: 90px;
+}
+

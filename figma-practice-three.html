@@ -121,7 +121,7 @@
                     <a href="#" class="learn-more-four">Learn more</a>
                 </div>
             </div>
-            <img src="/project/img/tokyo-sending-messages-from-one-place-to-another 4.png" class="card-image">
+            <img src="/project/img/tokyo-sending-messages-from-one-place-to-another 4.png" class="card-image" alt="">
         </div>       
     </div>
 
@@ -147,7 +147,7 @@
                     <a href="#" class="learn-more-six-black">Learn more</a>
                 </div>
             </div>
-            <img src="/project/img/Illustration (6).png" class="card-image">
+            <img src="/project/img/Illustration (6).png" alt="" class="card-image">
         </div>       
     </div>
 
@@ -425,12 +425,22 @@
         <p class="business-content">Connect with Us: Let's Discuss Your <br> Digital Marketing Needs</p>
     </div>
 
+<!-- Потрібно допилити назви класі вони трохи не коректні на мій погляд так як це лише приклад взятий у gpt -->
+ 
     <div class="contact-container">
         <div class="contact-button-section">
-            <button class="hello-button"></button>
-            <h3 class="hello-title">Say Hi</h3>
-            <button class="quote-button"></button>
-            <h3 class="quote-title">Get a Quote</h3>
+            <label class="radio">
+                <input type="radio" name="option" checked>
+                <span class="custom-circle"></span>
+                <span class="hi-button">Say Hi</span>
+                
+            </label>
+            <label class="radio">
+                <input type="radio" name="option">
+                <span class="custom-circle"></span>
+                <span class="quote-button">Get a Quote</span>
+                
+            </label>
         </div>
         
         <div class="messenge-container">
@@ -438,13 +448,46 @@
             <input class="name-input" type="text" name="" id="" placeholder="Name">
             <h3 class="email-title">Email*</h3>
             <input class="email-input" type="text" name="" id="" placeholder="Email">
-            <h3 class="title-title">Message*</h3>
-            <input class="message-input" type="text" name="" id="" placeholder="Message">
+            <h3 class="message-title">Message*</h3>
+            <textarea class="message-input" name="" placeholder="Message"></textarea>
+            <button class="send-message-button">Send Message</button>
         </div>
-        <button class="send-message-button">Send Message</button>
         <img class="contact-us-image" src="project-img/ContactIllustration.png" alt="">
     </div>
-
+<!-- хочу допилити функціонал цього блоку ще в js щоб цей блок був повністю динамічним та міг видавати різні відповіді на спроби наділсати повідомлення -->
+    <div class="footer">
+        <div class="footer-navigation">
+           <div class="footer-logo-container">
+                <img class="footer-logo-img" src="/project/img/white-Icon.png" alt="this Simple logo">
+                <p class="footer-logo-name">Positivus</p>
+            </div>
+            <nav class="footer-nav-container">
+                <ul class="footer-nav-list">
+                    <li>
+                        <a class="footer-button-about" href="">About us</a>
+                    </li>
+                    <li>
+                        <a class="footer-button-services" href="">Service</a>
+                    </li>    
+                    <li>
+                        <a class="footer-button-cases" href="">Use Cases</a>
+                    </li>    
+                    <li>
+                        <a class="footer-button-pricing" href="">Pricing</a>
+                    </li>    
+                    <li>
+                        <a class="footer-button-blog" href="">Blog</a>
+                    </li>    
+                </ul>
+            </nav>
+            <div class="footer-nav-images">
+                <img src="project-img/lndinicon.png" alt="linkedin icon">
+                <img src="project-img/facebookicon.png" alt="facebook icon">
+                <img src="project-img/twittericon.png" alt="twitter icon">
+            </div> 
+        </div>
+        
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

@@ -85,87 +85,6 @@ function updateArrows(index) {
   testimonRightArrow.src = index === testimonAllStarsList.length - 1 ? "project-img/Arrow right v2.png" : "project-img/Arrow right.png";
 }
 
-// Функція для оновлення відгуку після натиску стрілки вправо
-
-// const allTestimonials = Array.from(testimonList.children)
-// let rightCounter = 0;
-// function updatingContentToRight() {
-//   rightCounter++;
-//   if (rightCounter > 5) rightCounter = 1;
-
-//   switch(rightCounter) {
-//     case 0:
-//     allTestimonials[0].style.display = 'flex';
-//     allTestimonials[1].style.display = 'flex';
-//     allTestimonials[2].style.display = 'none';
-//     allTestimonials[3].style.display = 'none';
-//     allTestimonials[4].style.display = 'flex';
-
-//     allTestimonials[0].style.left = '660px';
-//     allTestimonials[1].style.left = '34%';
-//     allTestimonials[4].style.transform = 'translateX: (-204%)'
-//     break;
-    
-//     case 1:
-//     allTestimonials[0].style.display = 'flex';
-//     allTestimonials[1].style.display = 'flex';
-//     allTestimonials[2].style.display = 'flex';
-//     allTestimonials[3].style.display = 'none';
-//     allTestimonials[4].style.display = 'none';
-    
-//     allTestimonials[0].style.left = '-26px';
-//     allTestimonials[1].style.left = '-0.3%';
-//     allTestimonials[2].style.left = '110px'
-//     break;
-//     case 2:
-//     allTestimonials[0].style.display = 'none';
-//     allTestimonials[1].style.display = 'flex';
-//     allTestimonials[2].style.display = 'flex';
-//     allTestimonials[3].style.display = 'flex';
-//     allTestimonials[4].style.display = 'none';
-    
-//     allTestimonials[1].style.left = '-26px';
-//     allTestimonials[2].style.left = '4.3%';
-//     allTestimonials[3].style.left = '110px'
-//     break;
-
-//     case 3:
-//     allTestimonials[0].style.display = 'none';
-//     allTestimonials[1].style.display = 'none';
-//     allTestimonials[2].style.display = 'flex';
-//     allTestimonials[3].style.display = 'flex';
-//     allTestimonials[4].style.display = 'flex';
-    
-//     allTestimonials[2].style.left = '70px';
-//     allTestimonials[3].style.left = '4.3%';
-//     allTestimonials[4].style.left = '1370px'
-//     break;
-
-//     case 4:
-//     allTestimonials[0].style.display = 'flex';
-//     allTestimonials[1].style.display = 'none';
-//     allTestimonials[2].style.display = 'none';
-//     allTestimonials[3].style.display = 'flex';
-//     allTestimonials[4].style.display = 'flex';
-    
-//     allTestimonials[3].style.left = '-600px';
-//     allTestimonials[4].style.left = '685px';
-//     allTestimonials[0].style.left = '1355px'
-//     break;
-
-//     case 5:
-//     allTestimonials[0].style.display = 'flex';
-//     allTestimonials[1].style.display = 'flex';
-//     allTestimonials[2].style.display = 'none';
-//     allTestimonials[3].style.display = 'none';
-//     allTestimonials[4].style.display = 'flex';
-
-//     allTestimonials[0].style.left = '660px';
-//     allTestimonials[1].style.left = '34%';
-//     allTestimonials[4].style.left = '0px'
-//   }
-// }
-
 // Функція для оновлення відгуку після натиску стрілки вліво
 const allTestimonials = Array.from(testimonList.children);
 let counter = 0;
@@ -225,7 +144,7 @@ function updatingContent(direction) {
   });
 }
 
-// Прив'язка подій
+// Прив'язка подій для анімації самого контенту 
 testimonRightArrow.addEventListener('click', () => updatingContent('right'));
 testimonLeftArrow.addEventListener('click', () => updatingContent('left'));
 
