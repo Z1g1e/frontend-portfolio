@@ -133,7 +133,7 @@ a {
 .card-container-one, .card-container-two, .card-container-three {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 35px;
   margin-top: 60px;
 }
 
@@ -309,19 +309,20 @@ a {
 .prop-content {
   font-size: 20px;
   margin-top: 20px;
+  font-weight: 400;
 }
 
 .prop-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: 400;
-  width: 240px;
-  height: 60px;
+  font-size: 20px;
+  font-weight: 300;
+  width: 320px;
+  height: 70px;
   color: #ffffff;
   background-color: #191a23;
-  border-radius: 10px;
+  border-radius: 16px;
   cursor: pointer;
 }
 
@@ -769,8 +770,8 @@ a {
 }
 
 .team-button {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   color: #ffffff;
   background-color: #191a23;;
   width: 270px;

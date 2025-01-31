@@ -6,6 +6,7 @@ const cardBtn = document.querySelector('.action-button');
 const divider = document.querySelector('.divider-one');
 const textContainer = document.querySelector('.process-text-content-one');
 
+// Перемикач для першої картки
 cardBtn.addEventListener('click', () => {
     cardList.classList.toggle('active');
 
@@ -27,7 +28,7 @@ cardBtn.addEventListener('click', () => {
     titleContent.style.marginTop = '0vh';
     }
 })
-
+// Перемикач для всіх наступних карток
 cardsContainer.addEventListener('click', (event) => {
     // Перевіряємо, чи натиснута кнопка
     if (event.target.classList.contains('action-button-two')) {
@@ -37,7 +38,7 @@ cardsContainer.addEventListener('click', (event) => {
   
       // Знаходимо елементи всередині картки
       const divider = card.querySelector('.divider-two');
-      const titleContent = card.querySelector('.title-content-two');
+      // const titleContent = card.querySelector('.title-content-two');
       const textContainer = card.querySelector('.process-text-content-two');
   
       // Перемикаємо стан
@@ -165,3 +166,35 @@ testimonRightArrow.addEventListener('click', () => {
 // Початковий стан
 updateStars(currentIndex);
 updateArrows(currentIndex);
+
+// (Contact Us Section) логіка на кнопці та невеличка валідація форм 
+const nameInput = document.querySelector('.name-input');
+const emailInput = document.querySelector('.email-input');
+const messageInput = document.querySelector('.message-input');
+const sendMessenange = document.querySelector('.send-message-button'); 
+let nameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
+let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+sendMessenange.addEventListener('click', () => {
+  // поля для перевірки
+  const nameInputValue = nameInput.value.trim();
+  const emailInputValue = emailInput.value.trim();
+  const messageInputValue = messageInput.value.trim();
+
+  // перевірка на пусті поля
+  if (nameInputValue.value === '' || emailInputValue.value === '' || messageInputValue.value === '') {
+    alert('Будь ласка, заповніть всі поля!');
+    return;
+  }
+
+  // перевірка через regex основних полів та окрема валідація message.value
+  if (nameRegex.test(nameInputValue) && emailRegex.test(emailInputValue)) {
+    if (messageInputValue.length < 5) {
+      alert('Повідомлення коротше 5 символів');
+      return;
+    }
+    alert('Ваше повідомлення надіслано!');
+  } else {
+    alert('Введіть коректне ім\'я! або email!');
+  }
+});
