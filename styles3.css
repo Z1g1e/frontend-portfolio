@@ -1229,6 +1229,10 @@ a {
   margin-left: 100px;
 }
 
+.footer-logo-img {
+  margin-top: -5px;
+}
+
 .footer-logo-name {
   font-size: 32px;
   font-weight: 500;
